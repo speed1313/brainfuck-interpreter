@@ -158,8 +158,8 @@ fn main() {
     let program = parse(opcodes);
 
     // Set up environment and run program
-    let mut tape: Vec<u8> = vec![0; 1024];
-    let mut data_pointer = 512;
+    let mut tape: Vec<u8> = vec![0; 30000];
+    let mut data_pointer = 0;
 
     run(&program, &mut tape, &mut data_pointer);
 }
